@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>etch-a-sketch</title>
+</head>
+<body>
+    <div id='main'>
+        <header class='header'>Pixel Sketch.</header>
+        <br>
+        <div id="container" class='container'></div>
+        <form class='buttons'>
+            <button type='button' id='newGrid' onclick="newSketch()">New</button>
+            <select name='colors' id='colors'>
+                <option value=null>Choose a Color</option>
+                <option>Blue</option>
+                <option>Green</option>
+                <option>Brown</option>
+                <option>Pink</option>
+                <option>Tan</option>
+                <option>Black</option>
+                <option>Random</option>
+              </select>
+              <button type='button' id='clear' onclick="clearBtn()">Clear</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <footer class='footer'>Made by Brian Jones 2020</footer>
+        <script src="app.js" type= "text/javascript"></script>
+    </div>
+</body>
+</html>
