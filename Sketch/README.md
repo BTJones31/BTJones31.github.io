@@ -1,2 +1,0 @@
-This is my attempt at creating an etch-a-sketch like application for The Odin Project.  This was quite difficult and there were some major hurdles that I worked through, but I have gotten the application working in a manner that is very close to how I intended.  DOM manipulation is something I can definitely continue working on to hone this skill.  Hope you enjoy! 
--Brian
