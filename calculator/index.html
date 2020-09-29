@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator.</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="topBump">
+            <h1>Calculator.</h1>
+        </div>
+        <div class="innerTopBump">
+            <h1></h1>
+        </div>
+        <div class="leftBump">
+            <h1></h1>
+        </div>
+        <div class="innerLeftBump">
+            <h1></h1>
+        </div>
+        <div class="rightBump">
+            <h1></h1>
+        </div>
+        <div class="innerRightBump">
+            <h1></h1>
+        </div>
+        <div class="display device">
+            <h1 id="display" style="color:rgb(105, 104, 90)"></h1>
+        </div>
+        <div class="clear device">
+            <h1><button type="button" class="btn" id="clear" onclick="clearBtn();">Clear</button></h1>
+        </div>
+        <div class="plusMinus device">
+            <h1><button type="button" class="btn" id="plusMinus" onclick="enterNum('+-');">+/-</button></h1>
+        </div>
+        <div class="backspace device">
+            <h1></h1>
+        </div>
+        <div class="divide device">
+            <h1><button type="button" class="btn" id="divide" onclick="enterNum('/');decimal();">÷</button></h1>
+        </div>
+        <div class="seven device">
+            <h1><button type="button" class="btn num" id="seven" onclick="enterNum(7);">7</button></h1>
+        </div>
+        <div class="eight device">
+            <h1><button type="button" class="btn num" id="eight" onclick="enterNum(8);">8</button></h1>
+        </div>
+        <div class="nine device">
+            <h1><button type="button" class="btn num" id="nine" onclick="enterNum(9);">9</button></h1>
+        </div>
+        <div class="mult device">
+            <h1><button type="button" class="btn" id="mult"onclick="enterNum('*');decimal();">*</button></h1>
+        </div>
+        <div class="four device">
+            <h1><button type="button" class="btn num" id="four" onclick="enterNum(4);">4</button></h1>
+        </div>
+        <div class="five device">
+            <h1><button type="button" class="btn num" id="five" onclick="enterNum(5);">5</button></h1>
+        </div>
+        <div class="six device">
+            <h1><button type="button" class="btn num" id="six" onclick="enterNum(6);">6</button></h1>
+        </div>
+        <div class="minus device">
+            <h1><button type="button" class="btn" id="minus"onclick="enterNum('-');decimal();">-</button></h1>
+        </div>
+        <div class="one device">
+            <h1><button type="button" class="btn num" id="one" onclick="enterNum(1);">1</button></h1>
+        </div>
+        <div class="two device">
+            <h1><button type="button" class="btn num" id="two" onclick="enterNum(2);">2</button></h1>
+        </div>
+        <div class="three device">
+            <h1><button type="button" class="btn num" id="three" onclick="enterNum(3);">3</button></h1>
+        </div>
+        <div class="plus device">
+            <h1><button type="button" class="btn" id="plus" onclick="enterNum('+'); decimal()">+</button></h1>
+        </div>
+        <div class="zero device">
+            <h1><button type="button" class="btn num" id="zero" onclick="enterNum(0);">0</button></h1>
+        </div>
+        <div class="point device">
+            <h1><button type="button" class="btn num" id="point" onclick="enterNum('.');">.</button></h1>
+        </div>
+        <div class="equals device">
+            <h1><button type="button" class="btn eq" id="equals"onclick="operator(calcEntry1, calcOperator,calcEntry2); decimal()">=</button></h1>
+        </div>
+        <div class="bottomBump">
+            <h1>Made by Brian Jones 2020</h1>
+        </div>
+    </main>
+</body>
+<script src="app.js"></script>
+</html>
