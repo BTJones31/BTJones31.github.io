@@ -42,6 +42,9 @@ const enterNum = (num) => {
     } else if (typeof num == 'number' && calcOperator !== null){
         calcEntry2 = calcDisplay.textContent += num
         calcEntry2.toString()
+    } else if (calcEntry2 == null && num == '+-' && calcOperator !== null){
+        calcEntry2 = calcDisplay.textContent += '-'
+        calcEntry2.toString();
     } else if (typeof num == 'string' && num == '+-' && calcOperator !== null){
         calcEntry2 = calcDisplay.textContent = (calcEntry2 *-1)
         calcEntry2.toString();
@@ -58,22 +61,26 @@ const enterNum = (num) => {
 //Operations
 const add = (a,c) => {
     total = Number.parseFloat(a) + Number.parseFloat(c);
+    total = (Math.round(total*10000) / 10000)
     return total
 };
 
 const subtract = (a,c) =>{
     total = Number.parseFloat(a) - Number.parseFloat(c);
-    return total;
+    total = (Math.round(total*10000) / 10000)
+    return total
 };
 
 const multiply = (a,c) => {
     total = Number.parseFloat(a) * Number.parseFloat(c);
-    return total;
+    total = (Math.round(total*10000) / 10000)
+    return total
 };
 
 const divide = (a,c) => {
     total = Number.parseFloat(a) / Number.parseFloat(c);
-    return total;
+    total = (Math.round(total*10000) / 10000)
+    return total
 };
 
 //Enable decimal
